@@ -173,7 +173,7 @@ if __name__=="__main__":
 
     if args.plot:
         import matplotlib
-        matplotlib.use('Agg')
+#         matplotlib.use('Agg')
         import matplotlib.pyplot as plt
         import matplotlib.pylab as pylab
         from matplotlib.patches import Ellipse
@@ -192,4 +192,5 @@ if __name__=="__main__":
         ax.set_xlabel('x [m]')
         ax.set_ylabel('y [m]')
         plt.savefig(args.plot,dpi=90)
+        plt.show()
         
